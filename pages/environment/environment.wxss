@@ -1,0 +1,94 @@
+/* pages/environment/environment.wxss */
+page{
+  height:100%;
+  background-color: rgb(250, 235, 168);
+}
+
+
+.imagesize{
+ display:flex;
+ height: 70%;
+ justify-content: center;
+ align-items:center;
+}
+
+.image{
+  width:800rpx;
+  height:800rpx;
+}
+
+
+.title{
+text-align: center;
+font-size:25px;
+font-weight: bold;
+}
+
+.normal{
+text-align: center;
+font-size:20px;
+}
+
+
+.notice {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10rpx 25rpx;
+  background: #f1f1f1;
+  position: fixed;
+  bottom:30rpx;
+  width: 100%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.voice {
+  margin-right: 5rpx;
+  margin-top: 2rpx;
+  color: #fa6016;
+}
+
+.left-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.left-text {
+  position: absolute;
+  left: 0;
+  width: 40rpx;
+  height: 100%;
+  background: linear-gradient(to left,rgba(241,241,241,0),rgba(241,241,241,1));
+  z-index: 99;
+}
+
+.right-text {
+  position: absolute;
+  right: -1rpx;
+  width: 40rpx;
+  height: 100%;
+  background: linear-gradient(to left,rgba(241,241,241,1),rgba(241,241,241,0));
+  z-index: 99;
+}
+
+.content-box {
+  overflow: hidden;
+  width: 350rpx;
+}
+
+.content-text {
+  color: red;
+  white-space: nowrap;
+  font-size: 28rpx;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+

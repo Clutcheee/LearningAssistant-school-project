@@ -1,0 +1,18 @@
+<!--pages/time/time.wxml-->
+<view>
+	<!--pics文件夹下的background.jpg文件-->
+	<image class='background' src="../../images/backg.jpeg" mode="aspectFill"></image>
+	<!--页面其它部分-->
+  <view class="content">
+    <view class="title"><text>学习时长\n</text></view>
+    <view class="normal" >
+      <view>你学习了：{{time}}秒</view>
+    </view>
+  </view>
+
+  <view class='notice' wx:if="{{time > 3600}}">
+  <text>\n\n{{text}}</text>
+  </view> 
+
+ 
+</view>

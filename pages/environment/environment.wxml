@@ -1,0 +1,30 @@
+<!--pages/environment/environment.wxml-->
+<view>
+  <view class="title"><text>\n学习环境实时信息\n</text></view>
+  <view class="normal" >
+    <view>温度:{{temperature}}</view>
+    <view>湿度:{{humidity}}</view>
+    <view>光强:{{light}}</view>
+    <view>分贝:{{DB}}</view>
+  </view>
+</view>
+
+<view class="imagesize" >
+  <image class="image" src="../../images/pic.jpg"></image>
+</view>
+
+<view class='notice' wx:if="{{light < warn}}">
+  <image src="../../images/011k.gif" style="width:30px;height:20px"> </image>
+  <view class="left">
+    <text class='iconfont icon-labagonggao voice'></text>
+    <view class="left-box">
+      <view class="left-text"></view>
+        <view class='content-box'>
+           <view class='content-text' animation="{{animationData}}"><text id="text">{{text}}</text></view>
+             </view>
+        <view class="right-text"></view>
+      </view>
+    </view>
+
+</view>
+

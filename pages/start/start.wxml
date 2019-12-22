@@ -1,0 +1,8 @@
+<!--pages/start/start.wxml-->
+<view>
+	<image class='background' src="../../images/backg2.jpeg" mode="aspectFill"></image>
+  <view>
+  <button class="btn1" bindtap="navigate1">学习环境</button>
+  <button class="btn2" bindtap="navigate2">学习时长</button>
+  </view>
+</view>
